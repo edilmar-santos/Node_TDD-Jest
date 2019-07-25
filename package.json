@@ -1,0 +1,30 @@
+{
+  "name": "modulo5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.8",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test jest",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.6"
+  }
+}
