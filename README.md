@@ -1,10 +1,10 @@
 # Node_TDD-Jest
 
-Aplicando conceito de TDD em uma simples Api Rest, para criação e autenticação de um novo usuário.
+Implementação de login e autenticação, aplicando conceitos de clean architecture e TDD.
 
 # Tecnologias utilizadas
 
-    - Node Js
+    - Node.js
     - Jest
     - Supertest
     - Faker
